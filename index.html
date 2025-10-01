@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zhengqin Lai — Academic Homepage</title>
+    <meta name="description" content="Academic homepage of Zhengqin Lai — Ph.D. student focusing on lifelong learning for embodied intelligence." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg: #0b0b0b;
+        --text: #e8e8e8;
+        --muted: #b7b7b7;
+        --accent: #f5d200; /* rich yellow */
+        --accent-weak: #3a3000;
+        --card: #121212;
+        --border: #222;
+        --maxw: 980px;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+      body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; font-size: 16px; line-height: 1.65; }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .wrap { max-width: var(--maxw); margin: 0 auto; padding: 28px 18px 80px; }
+      header { display: grid; grid-template-columns: 1fr 200px; gap: 28px; align-items: center; padding: 22px 0 10px; border-bottom: 1px solid var(--border); }
+      @media (max-width: 740px) { header { grid-template-columns: 1fr; } }
+      .name { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600; letter-spacing: 0.3px; font-size: 40px; margin: 0 0 8px; }
+      .subtitle { margin: 0; color: var(--muted); font-size: 15px; }
+      .contact { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+      .badge { display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px; border: 1px solid var(--border); border-radius: 999px; background: linear-gradient(180deg, #101010, #0c0c0c); color: var(--text); font-size: 14px; }
+      .badge .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px var(--accent-weak); }
+      .portrait { width: 180px; height: 180px; border-radius: 16px; overflow: hidden; border: 1px solid var(--border); background: #0f0f0f; }
+      .portrait img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(0.95) contrast(1.02); }
+      main { display: grid; grid-template-columns: 1fr; gap: 30px; margin-top: 24px; }
+      section { padding: 18px 0 0; }
+      .sec-title { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600; letter-spacing: 0.2px; font-size: 26px; margin: 12px 0 14px; color: var(--text); }
+      .accent-bar { height: 3px; width: 56px; background: var(--accent); border-radius: 3px; box-shadow: 0 0 0 4px var(--accent-weak); }
+      .card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 18px; }
+      .about p { margin: 0; font-size: 16px; color: var(--text); }
+      .list { display: grid; gap: 14px; margin: 10px 0 0; padding: 0; list-style: none; }
+      .pub { padding: 14px; border: 1px solid var(--border); border-radius: 12px; background: #0f0f0f; }
+      .pub .title { font-weight: 600; color: var(--text); margin: 0 0 6px; }
+      .pub .authors { margin: 0; color: var(--muted); font-size: 14px; }
+      .pub .meta { margin: 6px 0 0; color: var(--muted); font-size: 13px; }
+      .pub .links a { margin-right: 10px; font-size: 13px; }
+      .awards li { padding: 12px 14px; border: 1px dashed var(--border); border-radius: 10px; background: #0e0e0e; }
+      footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div>
+          <h1 class="name">Zhengqin Lai</h1>
+          <p class="subtitle">Ph.D. student, Computer Science — Harbin Institute of Technology (Shenzhen)</p>
+          <div class="contact">
+            <a class="badge" href="mailto:quenlenu@gmail.com" aria-label="email">
+              <span class="dot"></span>
+              <span>quenlenu@gmail.com</span>
+            </a>
+            <a class="badge" href="https://scholar.google.com.hk/citations?user=YuqWRrUAAAAJ&hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a>
+          </div>
+        </div>
+        <div class="portrait">
+          <img src="img/self.png" alt="Portrait of Zhengqin Lai" />
+        </div>
+      </header>
+
+      <main>
+        <section class="about card">
+          <div class="accent-bar" aria-hidden="true"></div>
+          <h2 class="sec-title">About</h2>
+          <p>
+            I am a second-year CS Ph.D. student at Harbin Institute of Technology (Shenzhen). 
+            My research interests focus on lifelong learning for embodied intelligence.
+          </p>
+        </section>
+
+        <section class="publications card">
+          <div class="accent-bar" aria-hidden="true"></div>
+          <h2 class="sec-title">Selected Publications</h2>
+          <ul class="list">
+            <li class="pub">
+              <p class="title">Free Lunch Enhancements for Multi-modal Crowd Counting</p>
+              <p class="authors">Haoliang Meng, Xiaopeng Hong*, Zhengqin Lai, Miao Shang</p>
+              <p class="meta">CVPR, 2025</p>
+              <p class="links"></p>
+            </li>
+            <li class="pub">
+              <p class="title">Multimodal Blockwise Transformer for Robust Sentiment Recognition</p>
+              <p class="authors">Zhengqin Lai, Xiaopeng Hong*, Yabin Wang</p>
+              <p class="meta">Proceedings of the 2nd International Workshop on Multimodal and Responsible Affective Computing, 2024</p>
+              <p class="links"></p>
+            </li>
+            <li class="pub">
+              <p class="title">A Benchmark for Incremental Micro-expression Recognition</p>
+              <p class="authors">Zhengqin Lai, Xiaopeng Hong*, Yabin Wang, Xiaobai Li</p>
+              <p class="meta">arXiv:2501.19111, 2025-01-31</p>
+              <p class="links"><a href="https://arxiv.org/abs/2501.19111" target="_blank" rel="noopener">arXiv</a></p>
+            </li>
+            <li class="pub">
+              <p class="title">Agent-MER: A Cognitive Agent with Hierarchical Deliberation for Open-Vocabulary Multimodal Emotion Recognition</p>
+              <p class="authors">Zhengqin Lai, Zhilin Zhu, Xiaopeng Hong*, Yaowei Wang</p>
+              <p class="meta">Proceedings of the 33rd ACM International Conference on Multimedia (MM '25), Dublin, Ireland, 2025</p>
+              <p class="links"></p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="awards card">
+          <div class="accent-bar" aria-hidden="true"></div>
+          <h2 class="sec-title">Honors & Awards</h2>
+          <ul class="list">
+            <li>IJCAI @ MER 2024 — NOISE Track, Rank 3</li>
+            <li>ACM MM @ MER 2025 — FG Track, Rank 1</li>
+          </ul>
+        </section>
+      </main>
+
+      <footer>
+        <span>Last updated: Oct 2025 • Theme: black + yellow • Built for GitHub Pages</span>
+      </footer>
+    </div>
+  </body>
+  </html>
+
