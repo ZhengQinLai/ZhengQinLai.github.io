@@ -86,6 +86,16 @@
       }
       .wrap::before { left: 22px; top: 22px; }
       .wrap::after { right: 22px; bottom: 22px; }
+
+      /* Timeline */
+      .timeline-list { position: relative; list-style: none; margin: 10px 0 0; padding: 0 0 0 28px; }
+      .timeline-list::before { content: ""; position: absolute; left: 13px; top: 0; bottom: 0; width: 2px; background: var(--border); }
+      .tl-item { position: relative; padding: 10px 0 10px; }
+      .tl-item .tl-marker { position: absolute; left: 6px; top: 16px; width: 14px; height: 14px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--accent-weak); }
+      .tl-content { background: #0f0f0f; border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
+      .tl-range { color: var(--text); font-weight: 600; margin: 0 0 4px; }
+      .tl-role { color: var(--muted); margin: 0 0 2px; }
+      .tl-place, .tl-notes { color: var(--muted); font-size: 14px; margin: 0; }
     </style>
   </head>
   <body>
@@ -118,6 +128,30 @@
           <p data-i18n="about_body">
             I am a second-year CS Ph.D. student at Harbin Institute of Technology (Shenzhen). My research interests focus on lifelong learning for embodied intelligence.
           </p>
+        </section>
+
+        <section class="timeline card">
+          <div class="accent-bar" aria-hidden="true"></div>
+          <h2 class="sec-title" data-i18n="timeline_title">Timeline</h2>
+          <ul class="timeline-list">
+            <li class="tl-item">
+              <div class="tl-marker" aria-hidden="true"></div>
+              <div class="tl-content">
+                <p class="tl-range" data-i18n="tl2_range">2024 — Present</p>
+                <p class="tl-role" data-i18n="tl2_role">Ph.D. Student</p>
+                <p class="tl-place" data-i18n="tl2_place">Harbin Institute of Technology (Shenzhen)</p>
+                <p class="tl-notes" data-i18n="tl2_notes">Computer Science</p>
+              </div>
+            </li>
+            <li class="tl-item">
+              <div class="tl-marker" aria-hidden="true"></div>
+              <div class="tl-content">
+                <p class="tl-range" data-i18n="tl1_range">2020 — 2024</p>
+                <p class="tl-role" data-i18n="tl1_role">B.Eng., Computer Science and Technology</p>
+                <p class="tl-place" data-i18n="tl1_place">Harbin Institute of Technology</p>
+              </div>
+            </li>
+          </ul>
         </section>
 
         <section class="research card">
@@ -186,6 +220,14 @@
             research_title: "Research",
             research_body: "I pursue a single thread of lifelong and incremental learning across multimodal perception and affective computing. My recent work spans open-vocabulary multimodal emotion recognition (Agent-MER), incremental protocols for micro-expression recognition, robust multimodal modeling for sentiment understanding, and data-efficient ‘free-lunch’ enhancements for crowd counting. My long-term goal is to build embodied agents that acquire skills continuously in real environments.",
             pubs_title: "Selected Publications",
+            timeline_title: "Timeline",
+            tl1_range: "2020 — 2024",
+            tl1_role: "B.Eng., Computer Science and Technology",
+            tl1_place: "Harbin Institute of Technology",
+            tl2_range: "2024 — Present",
+            tl2_role: "Ph.D. Student",
+            tl2_place: "Harbin Institute of Technology (Shenzhen)",
+            tl2_notes: "Computer Science",
             awards_title: "Honors & Awards",
             award1: "IJCAI @ MER 2024 — NOISE Track, Rank 3",
             award2: "ACM MM @ MER 2025 — FG Track, Rank 1",
@@ -198,6 +240,14 @@
             research_title: "研究兴趣",
             research_body: "我的研究以增量/终身学习为主线，贯穿多模态感知与情感计算。近期工作涵盖开放词汇多模态情感识别（Agent-MER）、微表情识别的增量评测基准、面向情感理解的鲁棒多模态建模，以及在群体计数中提升泛化与数据效率的“免费午餐”增强方法。长期目标是在真实具身环境中构建能够持续习得技能的智能体。",
             pubs_title: "代表性论文",
+            timeline_title: "时间线",
+            tl1_range: "2020 — 2024",
+            tl1_role: "工学学士，计算机科学与技术",
+            tl1_place: "哈尔滨工业大学",
+            tl2_range: "2024 — 至今",
+            tl2_role: "博士研究生",
+            tl2_place: "哈尔滨工业大学（深圳）",
+            tl2_notes: "计算机科学",
             awards_title: "荣誉与奖励",
             award1: "IJCAI @ MER 2024 — NOISE 赛道 第三名",
             award2: "ACM MM @ MER 2025 — FG 赛道 第一名",
